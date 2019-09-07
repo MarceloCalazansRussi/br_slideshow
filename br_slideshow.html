@@ -1,0 +1,60 @@
+<!doctype html>
+<html>
+<head>
+
+<meta charset="utf-8">
+
+<title>BR Fast Slideshow</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+<script src="js/jquery.min.js"></script>
+
+<link rel="stylesheet" href="css/style.css" type="text/css" media="all"/>
+
+</head>
+
+<body>
+
+<div id="container-slide">
+
+     <div id="IE_fora">
+        <div class="posi_IE">
+          <p>Outdated browser</p>
+          <p>Unavailable for Internet Explorer</p>
+          <p>Update your browser</p>
+        </div>   
+     </div>
+
+     <div id="carregando">  
+          <img src="lendo-final.gif" class="scalavel-center" alt="carregando">
+     </div>
+     
+     <!-- Slides -->
+     <img src="img/couple.jpg"    alt="" class="slide" style="display: none;">
+     <img src="img/cancun.jpg"    alt="" class="slide" style="display: none;">
+     <img src="img/caribbean.jpg" alt="" class="slide" style="display: none;">
+     <img src="img/venice.jpg"    alt="" class="slide" style="display: none;">     
+     
+     <!-- Arrow Navigator -->
+     <div onclick="para_traz()">
+         <svg viewbox="0 0 16000 16000" class="arrow_left_svg">
+            <polyline class="arrow_left scalavel_arrow_left" points="11040,1920 4960,8000 11040,14080"></polyline>
+         </svg>
+     </div>
+     <div onclick="para_frente()">
+         <svg viewbox="0 0 16000 16000" class="arrow_right_svg">
+            <polyline class="arrow_right scalavel_arrow_right" points="4960,1920 11040,8000 4960,14080"></polyline>
+         </svg>
+     </div>
+     
+     <!-- Bullet -->
+     <div id="container_bolas"></div>
+
+</div>
+
+<script src="js/script.js"></script>
+
+</body>
+
+</html>
